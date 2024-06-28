@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.navbar img {
+    width: 7%;
+}
+
+.register-btn {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 7px 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    transition: .5s;
+}
+
+.register-btn:hover {
+    color: #FFF;
+    background: #007CBA;
+    border: 1px solid #007CBA;
+}
+
+.login-btn {
+    background: #007CBA;
+    border: 1px solid #007CBA;
+    border-radius: 8px;
+    padding: 7px 30px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.login-btn:hover {
+    color: #000;
+    background: gainsboro;
+    border: 1px solid gainsboro;
+}
+
+.ccg-welcom-sec {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* margin: 100px 0; */
+    /* border-radius: 10px */
+}
+
+.ccg-welcom-sec .ccg-welcom-content {
+    position: absolute;
+    bottom: 79px;
+    left: 35%;
+    transform: translate(-47%, -55%);
+    text-align: center;
+}
+
+.ccg-welcom-sec .ccg-welcom-content img {
+    width: 70%;
+}
+
+.ccg-welcom-sec .ccg-welcom-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+}
+
+.login-footer {
+    text-align: center;
+    border-top: 1px solid #ced4da;
+    background-color: #e3e7eb;
+    padding: 10px 0 10px;
+}
+
+.login-footer p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #656262;
+    font-family: math;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.navbar-brand img {
+    width: 45%;
+    height: 100% !important;
+}
+
+
+.h-screen .fa-magnifying-glass {
+    position: absolute;
+    top: 15px;
+    left: 27px;
+}
+
+
+.h-screen input {
+    padding-left: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+
+}
+
+.input-btn-focus-color {
+    border: #000;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.h-screen ::placeholder {
+    /* padding-left: 20px; */
+    font-size: 15px;
+    font-weight: 400;
+    color: #656262;
+    font-family: "Inter", sans-serif;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03A9F4 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+    border: none;
+}
+
+.bell {
+    width: 13px;
+}
+
+.bell path {
+    fill: white;
+}
+
+.button:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+.button:hover .bell {
+    animation: bellRing 0.9s both;
+}
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+
+    0%,
+    100% {
+        transform-origin: top;
+    }
+
+    15% {
+        transform: rotateZ(10deg);
+    }
+
+    30% {
+        transform: rotateZ(-10deg);
+    }
+
+    45% {
+        transform: rotateZ(5deg);
+    }
+
+    60% {
+        transform: rotateZ(-5deg);
+    }
+
+    75% {
+        transform: rotateZ(2deg);
+    }
+}
+
+.button:active {
+    transform: scale(0.8);
+}
+
+.col-md-9 {
+    display: flex;
+    justify-content: end;
+    gap: 26px;
+    align-items: center;
+
+}
+
+.profile {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000 !important;
+    font-family: "Inter", sans-serif;
+}
+
+.profile p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656262;
+    font-family: "Inter", sans-serif;
+    margin: -4px 0 0;
+}
+
+input:focus,
+button:focus,
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.bg-surface-secondary h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+}
+
+.bg-surface-secondary p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #656262;
+    font-family: "Inter", sans-serif;
+    width: 60%;
+}
+
+.registered-company {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 30px;
+}
+
+.overflow-y-lg-auto {
+    overflow: hidden;
+}
+
+.check-sec {
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    height: 155px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    padding: 20px;
+    margin: 200px 0;
+}
+
+.check-sec h5 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+}
+
+.check-sec img {
+    margin-bottom: 20px;
+}
+
+.start-btn-sec {
+    margin: 30px 30px;
+}
+
+.start-btn-sec span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000 !important;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+}
+
+.start-btn-sec span a {
+    background-color: #007CBA;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container .user .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #FFF;
+    transition: 0.5s;
+}
+
+section .container .user .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .user .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .container .user .formBx form h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+section .container .user .formBx form input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section .container .user .formBx form input[type='submit'] {
+    max-width: 100px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+section .container .user .formBx form .signup {
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section .container .user .formBx form .signup a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #677eff;
+}
+
+section .container .signupBx {
+    pointer-events: none;
+}
+
+section .container.active .signupBx {
+    pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+    left: 100%;
+}
+
+section .container.active .signupBx .formBx {
+    left: 0;
+}
+
+section .container .signupBx .imgBx {
+    left: -100%;
+}
+
+section .container.active .signupBx .imgBx {
+    left: 0%;
+}
+
+section .container .signinBx .formBx {
+    left: 0%;
+}
+
+section .container.active .signinBx .formBx {
+    left: 100%;
+}
+
+section .container .signinBx .imgBx {
+    left: 0%;
+}
+
+section .container.active .signinBx .imgBx {
+    left: -100%;
+}
+.logreg
+{
+    margin-top: 111px;
+    background-color: #eff4ffc7;
+    margin-top: 0;
+}
+@media (max-width: 991px) {
+    section .container {
+        max-width: 400px;
+    }
+
+    section .container .imgBx {
+        display: none;
+    }
+
+    section .container .user .formBx {
+        width: 100%;
+    }
+}
